@@ -1,1 +1,1 @@
-# FlowTradersCompetition
+# Flow Traders Hackathon
