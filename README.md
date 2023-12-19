@@ -23,3 +23,9 @@ Profitability is measured by the Annualized Sharpe Ratio, adjusted for trading c
 In a nutshell:
 1) Predict asset returns at time t+1 
 2) Find the portfolio weights that maximise the Sharpe ratio
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Our solution
+
+The optimization process involves solving a quadratic programming (QP) subproblem at every iteration, as part of the code for optimization. Due to the high computational requirements of the optimization problem, we utilize block optimization techniques. We have not taken into account any data features, as we have determined that the linear correlation between the features and returns data is insignificant. Therefore, we solely use the returns data. We have additionally examined the autocorrelation of the returns series, and found no significant pattern using diagnostic plots such as PACF and ACF.
