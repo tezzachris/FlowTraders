@@ -27,5 +27,5 @@ In a nutshell:
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Our solution
-
-The optimization process involves solving a quadratic programming (QP) subproblem at every iteration, as part of the code for optimization. Due to the high computational requirements of the optimization problem, we utilize block optimization techniques. We have not taken into account any data features, as we have determined that the linear correlation between the features and returns data is insignificant. Therefore, we solely use the returns data. We have additionally examined the autocorrelation of the returns series, and found no significant pattern using diagnostic plots such as PACF and ACF.
+1) We predict asset returns using naive martingale theory.
+2) The optimization process involves solving a quadratic programming (QP) subproblem at every iteration, as part of the code for optimization. Due to the high computational requirements of the optimization problem, we utilize block optimization techniques. We have not taken into account any data features, as we have determined that the linear correlation between the features and returns data is insignificant. Therefore, we solely use the returns data. We have additionally examined the autocorrelation of the returns series, and found no significant pattern using diagnostic plots such as PACF and ACF.
